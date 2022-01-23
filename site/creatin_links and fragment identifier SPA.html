@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <hr>
+    <a href="index.html">link to the file in the same directory</a>
+ 
+     <a href="http:\\www.Google.com" target="_blank" title="like page">
+      <div> Google</div>
+      </a> 
+    <section>
+    <h1 id="top">Frgament identifiers:Links to Section on the same page</h1>
+   <ul>
+     <!-- Link to every section in the page -->
+     <li><a href="#section1">section1</a></li>
+     <li><a href="#section2">section2</a></li>
+     <li><a href="#section3">section3</a></li>
+     <li><a href="#section4">section4</a></li>
+     <li><a href="#section5">section5_go_to_bottom</a></li>
+   </ul>
+  </section>
+  <section id="section1">
+    <p>
+     <h4>section1:  href</h4>  - This is the most used attribute for the <strong>&lt a &gt</strong>
+      tag. This is what is used to create a hyperlink. The value associated with
+      the href attribute should be either a complete or relative address to
+      another web page, a mail link or an anchor name (prefaced with the "#"
+      symbol). See below for more information on how to create these values for
+      your links.
+    </p>
+  </section>
+  <section id="section2">
+  <p>
+    <h4>section2:  name</h4>    - This attribute creates an anchor on your page that 
+      another <a> tag can link to. In essence, the use of the
+         name attribute means that you must use two
+        <strong>&lt a &gt</strong>one as the anchor using the name attribute
+         and one as the link to the anchor using the href 
+         attribute. To link to an anchor in this way, 
+         the href attribute must be set to the name of the
+          anchor prefaced by a "#" or pound sign. For example:
+          <strong > &lt a href="#bottom"&gt Link to the bottom of the page   &lt /a &gt</strong> 
+          And the anchor tag could look like this:
+          <strong> &lt a name="bottom" id="bottom"&gt This is the anchor text&lt /a &gt</strong> 
+           This attribute is depreciated in the latest version of 
+           the web standards in favor of the "id" attribute.
+      </p>
+    </section>
+    <section id="section3">
+<p>
+  <h4>section3:  id</h4>  - The creates a unique identifier that distinguishes the 
+  <strong>&lt a &gt</strong>  tag from every other element on the web page. 
+  Since the name attribute is slowly being phased out in the 
+  latest browsers, it is best to use both the name and the id attributes together when you create a anchor on your page so that you will be safe with both old and new browsers. Make sure that both attributes have the same value. An example 
+  of this is shown above in the "name" attribute information.
+  
+</p>
+</section>
+<section id="section4">
+<p>
+  <h4>section4:  target</h4>   - This attribute defines where the new web page will be loaded into when the link is clicked on. The options are "_blank", "_parent", "_self", "_top" and a frame's name. The default is "_self". Unless you are using frames (which you shouldn't), the only reason to use the target attribute is with the _blank option.
+</p>
+<ul>
+  <li>_blank - This will cause the link to always open a new browser window. This is useful if you are linking to another site entirely but still want your site to be accessible on the person's computer. Many people find this to be annoying, so use it sparingly.</li>
+  <li>_parent - Only used with frames, otherwise it acts like "_self"</li>
+  <li>_top - This ensures that the new page loads in the full screen of the window. Mainly used to "break out" of frames. Otherwise it acts like "_self"
+  </li>
+  <li>A frame's name - If you are using frames with your site (they should be used rarely, if at all) then you can enter the frame's name so that the resulting page you are linking to will appear in the appropriate frame window.</li>
+</ul>
+</section>
+
+<a name="section5" > section 6 :We are at the bottom</a>
+<hr>
+<a href="#top"> Link to top of the page</a>
+  </body>
+</html>
