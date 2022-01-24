@@ -1,1 +1,7 @@
-s
+body {
+  background-color: gray;
+  font-size: 130%;
+}
+h2 {
+  color: red;
+}
