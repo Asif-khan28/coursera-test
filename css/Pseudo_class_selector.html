@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class Selector</title>
+    <style>
+      /* Decendant selector */
+      header li{
+        list-style: none;
+      }
+       /* links has state and and states can be represented by pesudo_clasess*/
+        /* targeting 2 states: link- link as it is and visited- when it is visited*/
+       a:link,a:visited{
+         text-decoration: none;
+         background-color: green;
+         border: 1px solid blue;
+         color: black;
+
+         display: block;
+
+         width: 200px;
+         text-align:center;
+         margin-bottom: 1px;
+
+       }
+       a:hover, a:active{
+         background-color: red;
+         color: rgb(217, 176, 217);
+       }
+       header li:nth-child(3){
+         font-size: 24px;
+       }
+       section div:nth-child(odd){
+         background-color: gray;
+       }
+
+       /* Combining */
+       section div:nth-child(4):hover {
+         background-color: green;
+         cursor: pointer;
+         color: hotpink;
+       }
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Pseudo-class selectors address targeting only the structures that can be
+      targeted by simple combinations of regular selectors, or <strong>targeting the
+        ability to style based on user interaction with the page.</strong>  For example, we
+      would want the styling of an element to change if the user hovers or moves
+      their mouse over that element.
+    </p>
+    <pre><code>
+    selector:pseudo-class{
+
+    }
+    1: link
+    2: visited
+    3: hover
+    4: active
+    5: nth-child(....)
+  </code></pre>
+
+  <h1>Pseudo Class Selector</h1>
+<!-- uordered list as a MENU or nav is a common pratice -->
+  <header>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="http://www.google.com" target="_blank">Google</a></li>
+      <li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+    </ul>
+  </header>
+  <section>
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <div>Div 3</div>
+    <div>Div 4</div>
+    <div>Div 5</div>
+    <div>Div 6</div>
+    <div>Div 7</div>
+    <div>Div 8</div>
+    <div>Div 9</div>
+    <div>Div 10</div>
+    <div>Div 11</div>
+    <div>Div 12</div>
+    <div>Div 13</div>
+    <div>Div 14</div>
+    <div>Div 15</div>
+    <div>Div 16</div>
+    <div>Div 17</div>
+    <div>Div 18</div>
+    <div>Div 19</div>
+    <div>Div 20</div>
+  </section>
+  </body>
+</html>
