@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple selectors</title>
+  <style>
+    h2{
+      color: rosybrown;
+      text-align: center;
+    }
+    /* class highlight */
+    .highlight{
+      font-size: 20px;
+font-weight:bold;
+font-style: italic;
+background-color: rgb(153, 153, 221);
+opacity: 0.6;
+    }
+    #mainPoint{
+      font-size: 24px;
+      font-weight: bold;
+      background-color: rgb(22, 5, 5);
+      opacity: .7;
+    }
+    h1,p{
+      color:crimson;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    CSS selectors are used to determine which HTML element, or set of elements, 
+    to apply the CSS declarations to. The browser uses its <strong>Selector API to traverse 
+      the DOM </strong> s, and pick out the elements matching the selector.
+  </p>
+  <h4>Crafting a selector is a skill</h4>
+  <p>
+    Note:That's because a lot of JavaScript libraries out there ALSO use the
+    <strong>browser selector API</strong>  to attach behavior and data to HTML elements
+  </p>
+  <pre><code>
+    //Element slector example:paragraph
+    p{
+      color:blue;
+    }
+
+    //class selector: can be use for several elements, so not unique
+    .class_name{
+      color:green;
+    }
+   &ltp class="class_name"&gt ......&lt/p&gt 
+   &ltdiv class="class_name"&gt ......&lt/div&gt 
+
+   //id selector: its unique
+    #id_name{
+      color:red;
+    }
+   &ltdiv id="id_name"&gt ......&lt/div&gt 
+
+   //group several css rules to one ; for Effciency
+   //example
+    div, .class_name{
+      color:yellow;
+    }
+   &ltp class="class_name"&gt ......&lt/p&gt 
+   &ltdiv class="class_name"&gt ......&lt/div&gt 
+  </code></pre>
+  <h1>Example_simple selectors</h1>
+  <h2>Subheading 1</h2>
+  <p class="highlight">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur. Excepteur sint occaecat
+     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
+     id est laborum.
+  </p>
+  <p class="highlight">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Dunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <h2>Subheading 2</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur. Excepteur sint occaecat
+     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
+     id est laborum.
+  </p>
+  <div>This is the main point of the article. So attibute
+    <span id="mainPoint">id="mainPoint"</span>
+  </div>
+</body>
+</html>
