@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .highlight{
+      background-color: green;
+    }
+    /* all p with class=highlight */
+    p.highlight{
+           font-style: italic;
+    }
+    .highlight.mainpoint{
+      color: red;
+      background-color: darkgrey;
+    }
+
+  </style>
+</head>
+<body>
+  <pre><code>
+    /* Element with class selector*/
+
+    p.big{
+      font-size:20px;
+    }
+
+    /* Child selector:read right to left*/
+    //Note:direct child
+
+    article > p{
+      font-size:20px;
+    }
+
+   /* Descendant selector:read right to left*/
+  // Note: Every P that is inside (at any level) of article
+  article  p{
+    font-size:30px;
+  }
+
+  /* Not limited to Element selectors &lt-------------*/  
+  // Ex1:Every p element that is inside at any level of an element 
+  // with class="colored" will have its text color turn to blue.
+
+  .colored p{
+    color:blue;
+  }
+  // Ex1:Every element with class="colored" that is DIRECT child of article element
+  article  > .colored{
+    color:blue;
+  }
+
+  </code></pre>
+
+  <h1 class="highlight">Element with class selector</h1>
+
+  <p >
+    asLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    incididunt ut abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  </p>
+  <p class="mainpoint highlight">
+    This is P with class highlight
+  </p>
+</body>
+</html>
